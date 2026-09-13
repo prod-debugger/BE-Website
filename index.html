@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balaji Earthmover | Earthmoving & Construction — Government Project Specialists</title>
+<meta name="description" content="Balaji Earthmover — earthmoving and construction company specializing in government infrastructure and tender-based projects across Uttarakhand and India since 2008.">
+<link rel="icon" href="assets/logo.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          heading: ['Poppins', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+        },
+        colors: {
+          amber: {
+            DEFAULT: '#f2a900',
+            dark: '#c98600',
+          },
+          ink: {
+            DEFAULT: '#12161c',
+            light: '#1c222b',
+          }
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background:#0c0f13; color:#e7e9ec; }
+  h1,h2,h3,h4 { font-family: 'Poppins', sans-serif; }
+
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: .1s; }
+  .reveal-delay-2 { transition-delay: .2s; }
+  .reveal-delay-3 { transition-delay: .3s; }
+  .reveal-delay-4 { transition-delay: .4s; }
+  .reveal-delay-5 { transition-delay: .5s; }
+
+  #navbar { transition: background-color .35s ease, box-shadow .35s ease, padding .35s ease; }
+  #navbar.scrolled { background-color: rgba(12,15,19,.92); backdrop-filter: blur(8px); box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+
+  .card-hover { transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
+  .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,.35); border-color: rgba(242,169,0,.5); }
+
+  .marker-line { width: 44px; height: 3px; background: #f2a900; }
+
+  #backToTop { transition: opacity .3s ease, transform .3s ease; }
+
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: #0c0f13; }
+  ::-webkit-scrollbar-thumb { background: #2b323d; border-radius: 6px; }
+
+  .mobile-menu { max-height: 0; overflow: hidden; transition: max-height .4s ease; }
+  .mobile-menu.open { max-height: 640px; }
+
+  .btn-primary { background: #f2a900; color:#12161c; }
+  .btn-primary:hover { background:#ffbe2e; }
+
+  .stat-num { font-variant-numeric: tabular-nums; }
+
+  #toast { transition: opacity .35s ease, transform .35s ease; }
+
+  .status-pill { font-size: 10px; letter-spacing: .08em; font-weight: 700; padding: 3px 10px; border-radius: 999px; }
+  .status-completed { background: rgba(34,197,94,.15); color: #4ade80; border: 1px solid rgba(74,222,128,.35); }
+  .status-ongoing { background: rgba(242,169,0,.15); color: #f2a900; border: 1px solid rgba(242,169,0,.4); }
+</style>
+</head>
+
+<body class="antialiased">
+
+<!-- Top bar -->
+<div class="hidden md:flex justify-between items-center bg-black/40 text-xs text-gray-300 px-8 py-2 border-b border-white/5">
+  <div class="flex gap-6">
+    <span>✉ balajiearthmovers.rdr2@gmail.com</span>
+    <span>☎ 7037035948</span>
+    <span>◷ Monday – Sunday, All Days</span>
+  </div>
+  <div class="flex gap-4">
+    <span class="text-gray-400">Uttarakhand · Rajasthan · Pan-India</span>
+  </div>
+</div>
+
+<!-- Navbar -->
+<header id="navbar" class="fixed top-0 md:top-8 left-0 right-0 z-50 px-6 md:px-10 py-3">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3">
+      <img src="assets/logo.jpg" alt="Balaji Earthmover logo" class="h-11 w-11 rounded-full object-cover ring-2 ring-amber/60">
+      <span class="font-heading font-extrabold text-base md:text-xl tracking-tight leading-tight">
+        BALAJI <span class="text-amber">EARTHMOVER</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-6 text-[13px] font-medium text-gray-200">
+      <a href="#home" class="hover:text-amber transition">Home</a>
+      <a href="#about" class="hover:text-amber transition">About</a>
+      <a href="#vision" class="hover:text-amber transition">Vision &amp; Values</a>
+      <a href="#services" class="hover:text-amber transition">Services</a>
+      <a href="#equipment" class="hover:text-amber transition">Equipment</a>
+      <a href="#projects" class="hover:text-amber transition">Projects</a>
+      <a href="#team" class="hover:text-amber transition">Team</a>
+      <a href="#contact" class="hover:text-amber transition">Contact</a>
+    </nav>
+    <a href="#contact" class="hidden lg:inline-block btn-primary font-semibold text-sm px-5 py-2.5 rounded-full">Request a Quote</a>
+    <button id="menuBtn" class="lg:hidden text-2xl" aria-label="Toggle menu">☰</button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu lg:hidden mt-4 bg-ink-light rounded-xl border border-white/10">
+    <div class="flex flex-col p-4 gap-1 text-sm font-medium">
+      <a href="#home" class="px-3 py-2.5 rounded-lg hover:bg-white/5">Home</a>
+      <a href="#about" class="px-3 py-2.5 rounded-lg hover:bg-white/5">About</a>
+      <a href="#vision" class="px-3 py-2.5 rounded-lg hover:bg-white/5">Vision &amp; Values</a>
+      <a href="#services" class="px-3 py-2.5 rounded-lg hover:bg-white/5">Services</a>
+      <a href="#equipment" class="px-3 py-2.5 rounded-lg hover:bg-white/5">Equipment</a>
+      <a href="#projects" class="px-3 py-2.5 rounded-lg hover:bg-white/5">Projects</a>
+      <a href="#certifications" class="px-3 py-2.5 rounded-lg hover:bg-white/5">Certifications</a>
+      <a href="#team" class="px-3 py-2.5 rounded-lg hover:bg-white/5">Team</a>
+      <a href="#contact" class="px-3 py-2.5 rounded-lg btn-primary text-center font-semibold mt-1">Request a Quote</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="home" class="relative pt-32 md:pt-44 pb-16 md:pb-24 px-6 md:px-10 overflow-hidden bg-ink">
+  <div class="absolute inset-0" style="background:
+      radial-gradient(ellipse 900px 650px at 88% 8%, rgba(242,169,0,.18), transparent 60%),
+      radial-gradient(ellipse 700px 550px at 6% 95%, rgba(242,169,0,.08), transparent 60%),
+      linear-gradient(180deg, #0c0f13 0%, #12161c 55%, #0c0f13 100%);"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto">
+    <div class="reveal in rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+      <img src="assets/hero-banner.jpg" alt="Balaji Earthmover — Excavate, Move, Build" class="w-full h-auto block">
+    </div>
+
+    <div class="reveal in reveal-delay-1 max-w-3xl mx-auto text-center mt-10 md:mt-14">
+      <p class="text-amber font-semibold tracking-[.25em] text-xs md:text-sm mb-4">EARTHMOVING &amp; CONSTRUCTION — GOVERNMENT PROJECT SPECIALISTS</p>
+      <h1 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl leading-tight mb-5">
+        Since 2008, dependable earthmoving solutions through quality work, capable machines, safety and commitment.
+      </h1>
+      <p class="text-gray-400 text-base md:text-lg">
+        Proprietor-led earthmoving &amp; construction company specializing in government infrastructure and tender-based projects — operating across Uttarakhand and undertaking projects throughout India.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="#projects" class="btn-primary font-semibold px-7 py-3.5 rounded-full">View Government Projects</a>
+        <a href="#contact" class="border border-white/30 hover:border-amber hover:text-amber font-semibold px-7 py-3.5 rounded-full transition">Request a Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section id="stats" class="relative z-20 px-6">
+  <div class="max-w-6xl mx-auto bg-ink-light border border-white/10 rounded-2xl shadow-2xl grid grid-cols-2 md:grid-cols-5 divide-x divide-white/10">
+    <div class="reveal p-6 text-center"><div class="stat-num font-heading font-extrabold text-3xl md:text-4xl text-amber" data-count="18">0</div><div class="text-xs md:text-sm text-gray-400 mt-1">Years Experience</div></div>
+    <div class="reveal reveal-delay-1 p-6 text-center"><div class="stat-num font-heading font-extrabold text-3xl md:text-4xl text-amber" data-count="55">0</div><div class="text-xs md:text-sm text-gray-400 mt-1">Machines &amp; Equipment</div></div>
+    <div class="reveal reveal-delay-2 p-6 text-center"><div class="stat-num font-heading font-extrabold text-3xl md:text-4xl text-amber" data-count="7">0</div><div class="text-xs md:text-sm text-gray-400 mt-1">Government Tender Projects</div></div>
+    <div class="reveal reveal-delay-3 p-6 text-center"><div class="stat-num font-heading font-extrabold text-3xl md:text-4xl text-amber" data-count="50">0</div><div class="text-xs md:text-sm text-gray-400 mt-1">Equipment Operators</div></div>
+    <div class="reveal reveal-delay-4 p-6 text-center col-span-2 md:col-span-1"><div class="stat-num font-heading font-extrabold text-3xl md:text-4xl text-amber" data-count="100">0</div><div class="text-xs md:text-sm text-gray-400 mt-1">Own Fleet, No Rentals %</div></div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="max-w-7xl mx-auto px-6 md:px-10 py-28 md:py-36 grid md:grid-cols-2 gap-14 items-center">
+  <div class="reveal relative">
+    <div class="rounded-2xl overflow-hidden aspect-[4/5] border border-white/10 flex items-center justify-center p-10 relative"
+         style="background: radial-gradient(ellipse at 50% 30%, rgba(242,169,0,.14), transparent 60%), linear-gradient(160deg, #1c222b, #0c0f13);">
+      <div class="absolute inset-0 opacity-[.25]" style="background-image: radial-gradient(rgba(242,169,0,.35) 1px, transparent 1.5px); background-size: 26px 26px;"></div>
+      <img src="assets/logo.jpg" alt="Balaji Earthmover logo" class="relative z-10 w-56 sm:w-64 rounded-full shadow-2xl ring-4 ring-amber/30">
+    </div>
+    <div class="absolute -bottom-6 -right-6 bg-amber text-ink font-heading font-extrabold rounded-2xl p-6 shadow-xl hidden sm:block">
+      <div class="text-3xl">18+</div>
+      <div class="text-xs font-semibold">Years of Trust</div>
+    </div>
+  </div>
+  <div class="reveal reveal-delay-1">
+    <p class="text-amber font-semibold tracking-[.25em] text-sm mb-3">ABOUT US</p>
+    <h2 class="font-heading font-extrabold text-3xl md:text-4xl leading-tight mb-6">Getting the groundwork done right.</h2>
+    <p class="text-gray-400 mb-4 leading-relaxed">Balaji Earthmover is an earthmoving and construction company specializing in government infrastructure and tender-based projects. The company operates primarily across Uttarakhand and undertakes projects throughout India.</p>
+    <p class="text-gray-400 mb-4 leading-relaxed">Our work includes excavation, earthwork, land preparation, material movement and site development. Whether it is a small site or a demanding construction project, we focus on doing the job safely, efficiently, and on time — because a machine is only as good as the people operating and managing it.</p>
+    <p class="text-gray-400 mb-8 leading-relaxed">Our aim is simple: build a company people can trust for their earthmoving and construction needs, and build relationships that last beyond a single project.</p>
+    <ul class="grid sm:grid-cols-2 gap-4 mb-8 text-sm">
+      <li class="flex items-center gap-3"><span class="text-amber">✓</span> Founded in 2008 by Mr. Guga Lal Singhla</li>
+      <li class="flex items-center gap-3"><span class="text-amber">✓</span> Proprietorship, registered in Rudrapur, Uttarakhand</li>
+      <li class="flex items-center gap-3"><span class="text-amber">✓</span> Own fleet — no dependency on rentals</li>
+      <li class="flex items-center gap-3"><span class="text-amber">✓</span> Government tender &amp; compliance experience</li>
+    </ul>
+    <div class="flex flex-wrap gap-x-8 gap-y-2">
+      <a href="#vision" class="inline-flex items-center gap-2 font-semibold text-amber hover:gap-3 transition-all">Our Vision &amp; Values →</a>
+      <a href="#services" class="inline-flex items-center gap-2 font-semibold text-amber hover:gap-3 transition-all">Explore Our Services →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Vision, Mission & Core Values -->
+<section id="vision" class="bg-ink-light py-28 md:py-36 px-6 md:px-10 border-y border-white/5">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <p class="text-amber font-semibold tracking-[.25em] text-sm mb-3">WHAT DRIVES US</p>
+      <h2 class="font-heading font-extrabold text-3xl md:text-4xl mb-4">Vision, Mission &amp; Core Values</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-14">
+      <div class="reveal bg-ink border border-white/10 rounded-2xl p-8">
+        <h3 class="font-heading font-bold text-lg mb-3 text-amber">Vision</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">To become a trusted name in the construction and earthmoving industry by delivering quality work, dependable machinery, and honest service — while growing together with our clients and contributing to stronger infrastructure and a better future.</p>
+      </div>
+      <div class="reveal reveal-delay-1 bg-ink border border-white/10 rounded-2xl p-8">
+        <h3 class="font-heading font-bold text-lg mb-3 text-amber">Mission</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">To make every project's groundwork easier, safer, and more dependable — providing the right machinery, skilled operation, and responsible service for excavation, earthwork, material movement, land preparation, and site development.</p>
+      </div>
+    </div>
+
+    <blockquote class="reveal reveal-delay-2 text-center max-w-3xl mx-auto mb-16">
+      <p class="font-heading font-bold text-xl md:text-2xl leading-snug text-white">
+        &ldquo;To deliver dependable earthmoving solutions through quality work, capable machines, safety, and commitment.&rdquo;
+      </p>
+      <div class="marker-line mx-auto mt-5"></div>
+    </blockquote>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+      <div class="reveal flex gap-4 p-5 rounded-2xl border border-white/10"><span class="font-heading font-extrabold text-amber text-lg">01</span><div><h4 class="font-heading font-bold text-sm mb-1">Safety First</h4><p class="text-xs text-gray-400">Safety of people, clients, equipment and worksites above everything else.</p></div></div>
+      <div class="reveal reveal-delay-1 flex gap-4 p-5 rounded-2xl border border-white/10"><span class="font-heading font-extrabold text-amber text-lg">02</span><div><h4 class="font-heading font-bold text-sm mb-1">Quality in Every Job</h4><p class="text-xs text-gray-400">Doing every project properly, efficiently, and with attention to detail.</p></div></div>
+      <div class="reveal reveal-delay-2 flex gap-4 p-5 rounded-2xl border border-white/10"><span class="font-heading font-extrabold text-amber text-lg">03</span><div><h4 class="font-heading font-bold text-sm mb-1">Reliability &amp; Commitment</h4><p class="text-xs text-gray-400">We stand by our commitment and deliver as promised.</p></div></div>
+      <div class="reveal reveal-delay-3 flex gap-4 p-5 rounded-2xl border border-white/10"><span class="font-heading font-extrabold text-amber text-lg">04</span><div><h4 class="font-heading font-bold text-sm mb-1">Honesty &amp; Transparency</h4><p class="text-xs text-gray-400">Straightforward communication, fair dealing, and honest work.</p></div></div>
+      <div class="reveal reveal-delay-4 flex gap-4 p-5 rounded-2xl border border-white/10"><span class="font-heading font-extrabold text-amber text-lg">05</span><div><h4 class="font-heading font-bold text-sm mb-1">Timely Execution</h4><p class="text-xs text-gray-400">Discipline and planning to keep projects moving forward.</p></div></div>
+      <div class="reveal flex gap-4 p-5 rounded-2xl border border-white/10"><span class="font-heading font-extrabold text-amber text-lg">06</span><div><h4 class="font-heading font-bold text-sm mb-1">Respect for People &amp; Property</h4><p class="text-xs text-gray-400">Clients, employees, partners, equipment and sites treated with care.</p></div></div>
+      <div class="reveal reveal-delay-1 flex gap-4 p-5 rounded-2xl border border-white/10"><span class="font-heading font-extrabold text-amber text-lg">07</span><div><h4 class="font-heading font-bold text-sm mb-1">Professionalism</h4><p class="text-xs text-gray-400">A professional approach from first conversation to project completion.</p></div></div>
+      <div class="reveal reveal-delay-2 flex gap-4 p-5 rounded-2xl border border-white/10"><span class="font-heading font-extrabold text-amber text-lg">08</span><div><h4 class="font-heading font-bold text-sm mb-1">Continuous Improvement</h4><p class="text-xs text-gray-400">Improving methods, equipment, skills and processes for better results.</p></div></div>
+      <div class="reveal reveal-delay-3 flex gap-4 p-5 rounded-2xl border border-white/10"><span class="font-heading font-extrabold text-amber text-lg">09</span><div><h4 class="font-heading font-bold text-sm mb-1">Customer Satisfaction</h4><p class="text-xs text-gray-400">We listen, understand requirements, and deliver real value.</p></div></div>
+      <div class="reveal reveal-delay-4 flex gap-4 p-5 rounded-2xl border border-white/10"><span class="font-heading font-extrabold text-amber text-lg">10</span><div><h4 class="font-heading font-bold text-sm mb-1">Responsible Growth</h4><p class="text-xs text-gray-400">Lasting value for clients, employees, partners and communities.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="max-w-7xl mx-auto px-6 md:px-10 py-28 md:py-36">
+  <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+    <p class="text-amber font-semibold tracking-[.25em] text-sm mb-3">WHAT WE DO</p>
+    <h2 class="font-heading font-extrabold text-3xl md:text-4xl mb-4">Services Offered</h2>
+    <p class="text-gray-400">The full range of earthmoving and construction services for government and infrastructure projects.</p>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="reveal card-hover bg-ink-light border border-white/10 rounded-2xl p-8">
+      <div class="text-4xl mb-5">⛏️</div>
+      <div class="text-xs text-gray-500 mb-2">01</div>
+      <h3 class="font-heading font-bold text-lg mb-3">Earthmoving &amp; Excavation</h3>
+      <p class="text-gray-400 text-sm">Professional excavation and earthmoving for construction projects of every scale.</p>
+    </div>
+    <div class="reveal reveal-delay-1 card-hover bg-ink-light border border-white/10 rounded-2xl p-8">
+      <div class="text-4xl mb-5">📐</div>
+      <div class="text-xs text-gray-500 mb-2">02</div>
+      <h3 class="font-heading font-bold text-lg mb-3">Land Levelling &amp; Grading</h3>
+      <p class="text-gray-400 text-sm">Precise land levelling and grading to prepare sites for development.</p>
+    </div>
+    <div class="reveal reveal-delay-2 card-hover bg-ink-light border border-white/10 rounded-2xl p-8">
+      <div class="text-4xl mb-5">🛣️</div>
+      <div class="text-xs text-gray-500 mb-2">03</div>
+      <h3 class="font-heading font-bold text-lg mb-3">Road Construction &amp; Repair</h3>
+      <p class="text-gray-400 text-sm">Highway and road construction, widening, strengthening and periodic renewal.</p>
+    </div>
+    <div class="reveal card-hover bg-ink-light border border-white/10 rounded-2xl p-8">
+      <div class="text-4xl mb-5">🏗️</div>
+      <div class="text-xs text-gray-500 mb-2">04</div>
+      <h3 class="font-heading font-bold text-lg mb-3">Site Development &amp; Clearance</h3>
+      <p class="text-gray-400 text-sm">Complete site preparation and clearance services for new projects.</p>
+    </div>
+    <div class="reveal reveal-delay-1 card-hover bg-ink-light border border-white/10 rounded-2xl p-8">
+      <div class="text-4xl mb-5">🚧</div>
+      <div class="text-xs text-gray-500 mb-2">05</div>
+      <h3 class="font-heading font-bold text-lg mb-3">Trenching &amp; Drainage Work</h3>
+      <p class="text-gray-400 text-sm">Trenching and drainage solutions built for durability and proper runoff.</p>
+    </div>
+    <div class="reveal reveal-delay-2 card-hover bg-ink-light border border-white/10 rounded-2xl p-8">
+      <div class="text-4xl mb-5">📋</div>
+      <div class="text-xs text-gray-500 mb-2">06</div>
+      <h3 class="font-heading font-bold text-lg mb-3">Government Tender Projects</h3>
+      <p class="text-gray-400 text-sm">Execution of government tender-based construction and infrastructure work.</p>
+    </div>
+    <div class="reveal card-hover bg-ink-light border border-white/10 rounded-2xl p-8 sm:col-span-2 lg:col-span-1">
+      <div class="text-4xl mb-5">🌄</div>
+      <div class="text-xs text-gray-500 mb-2">07</div>
+      <h3 class="font-heading font-bold text-lg mb-3">Hotmix &amp; Bridges in Hilly Terrain</h3>
+      <p class="text-gray-400 text-sm">Hotmix road work and bridge construction adapted for hilly terrain.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Equipment & Machinery -->
+<section id="equipment" class="bg-ink-light py-28 md:py-36 px-6 md:px-10 border-y border-white/5">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <p class="text-amber font-semibold tracking-[.25em] text-sm mb-3">OUR OWN FLEET</p>
+      <h2 class="font-heading font-extrabold text-3xl md:text-4xl mb-4">Equipment &amp; Machinery</h2>
+      <p class="text-gray-400">55+ machines across earthmoving, road-building and material processing — no dependency on rentals.</p>
+    </div>
+    <div class="reveal overflow-x-auto rounded-2xl border border-white/10">
+      <table class="w-full text-sm min-w-[560px]">
+        <thead>
+          <tr class="bg-ink text-left text-xs tracking-widest text-amber">
+            <th class="px-6 py-4 font-heading font-bold">Equipment Type</th>
+            <th class="px-6 py-4 font-heading font-bold text-center">Quantity</th>
+            <th class="px-6 py-4 font-heading font-bold text-center">Model / Year</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/10">
+          <tr class="hover:bg-white/5 transition"><td class="px-6 py-4 font-medium">Excavator</td><td class="px-6 py-4 text-center text-amber font-semibold">08</td><td class="px-6 py-4 text-center text-gray-400">2022–2026</td></tr>
+          <tr class="hover:bg-white/5 transition"><td class="px-6 py-4 font-medium">JCB / Backhoe Loader</td><td class="px-6 py-4 text-center text-amber font-semibold">05</td><td class="px-6 py-4 text-center text-gray-400">2023–2025</td></tr>
+          <tr class="hover:bg-white/5 transition"><td class="px-6 py-4 font-medium">Tipper Truck</td><td class="px-6 py-4 text-center text-amber font-semibold">20</td><td class="px-6 py-4 text-center text-gray-400">2023–2026</td></tr>
+          <tr class="hover:bg-white/5 transition"><td class="px-6 py-4 font-medium">Road Roller</td><td class="px-6 py-4 text-center text-amber font-semibold">04</td><td class="px-6 py-4 text-center text-gray-400">2018–2022</td></tr>
+          <tr class="hover:bg-white/5 transition"><td class="px-6 py-4 font-medium">Paver Machine</td><td class="px-6 py-4 text-center text-amber font-semibold">02</td><td class="px-6 py-4 text-center text-gray-400">2018–2022</td></tr>
+          <tr class="hover:bg-white/5 transition"><td class="px-6 py-4 font-medium">Vibrator Roller</td><td class="px-6 py-4 text-center text-amber font-semibold">02</td><td class="px-6 py-4 text-center text-gray-400">2018–2022</td></tr>
+          <tr class="hover:bg-white/5 transition"><td class="px-6 py-4 font-medium">Grader &amp; Soil Compactor</td><td class="px-6 py-4 text-center text-amber font-semibold">02</td><td class="px-6 py-4 text-center text-gray-400">2018–2022</td></tr>
+          <tr class="hover:bg-white/5 transition"><td class="px-6 py-4 font-medium">Dozer</td><td class="px-6 py-4 text-center text-amber font-semibold">03</td><td class="px-6 py-4 text-center text-gray-400">2005–2012</td></tr>
+          <tr class="hover:bg-white/5 transition"><td class="px-6 py-4 font-medium">Fiori</td><td class="px-6 py-4 text-center text-amber font-semibold">01</td><td class="px-6 py-4 text-center text-gray-400">2026</td></tr>
+          <tr class="hover:bg-white/5 transition"><td class="px-6 py-4 font-medium">Hot Mix Plant / Batch Type</td><td class="px-6 py-4 text-center text-amber font-semibold">02</td><td class="px-6 py-4 text-center text-gray-400">2018–2022</td></tr>
+          <tr class="hover:bg-white/5 transition"><td class="px-6 py-4 font-medium">Gen Set</td><td class="px-6 py-4 text-center text-amber font-semibold">05</td><td class="px-6 py-4 text-center text-gray-400">2018–2022</td></tr>
+          <tr class="hover:bg-white/5 transition"><td class="px-6 py-4 font-medium">Crusher (50 TPH)</td><td class="px-6 py-4 text-center text-amber font-semibold">01</td><td class="px-6 py-4 text-center text-gray-400">2025</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="max-w-7xl mx-auto px-6 md:px-10 py-28 md:py-36">
+  <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+    <p class="text-amber font-semibold tracking-[.25em] text-sm mb-3">OUR WORK</p>
+    <h2 class="font-heading font-extrabold text-3xl md:text-4xl mb-4">Key Projects &amp; Government Tenders</h2>
+    <p class="text-gray-400">Completed and ongoing highway, road and bridge projects for NH PWD and PWD Uttarakhand.</p>
+  </div>
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="reveal card-hover bg-ink-light border border-white/10 rounded-2xl p-7">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-[10px] tracking-widest text-amber font-semibold">NH 507 · UTTARAKHAND</span>
+        <span class="status-pill status-completed">COMPLETED</span>
+      </div>
+      <p class="text-sm text-gray-300 leading-relaxed mb-4">Balance work of widening to 2-lane with geometric improvement from Km 60.00 to 64.825 (actual chainage at site Km 59.700 to Km 64.525) on NH 507, under NH(O) for the year 2023-24, under EPC mode.</p>
+      <div class="flex justify-between text-xs text-gray-500 pt-3 border-t border-white/10"><span>NH PWD Uttarakhand</span><span>2024</span></div>
+    </div>
+    <div class="reveal reveal-delay-1 card-hover bg-ink-light border border-white/10 rounded-2xl p-7">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-[10px] tracking-widest text-amber font-semibold">NH 507 · UTTARAKHAND</span>
+        <span class="status-pill status-ongoing">ONGOING</span>
+      </div>
+      <p class="text-sm text-gray-300 leading-relaxed mb-4">Widening and strengthening of single/intermediate lane to 2-lane from existing chainage Km 100.660 to Km 106.540 (design chainage Km 78.785 to Km 84.600, total length 5.815 km) on NH-507.</p>
+      <div class="flex justify-between text-xs text-gray-500 pt-3 border-t border-white/10"><span>NH PWD Uttarakhand</span><span>2025</span></div>
+    </div>
+    <div class="reveal reveal-delay-2 card-hover bg-ink-light border border-white/10 rounded-2xl p-7">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-[10px] tracking-widest text-amber font-semibold">NH 309A · LOHAGHAT</span>
+        <span class="status-pill status-completed">COMPLETED</span>
+      </div>
+      <p class="text-sm text-gray-300 leading-relaxed mb-4">Periodic renewal of road from Km 8.000 to 52.000 of NH 309A, NH Division Lohaghat, under ARP for 2022-23, under EPC mode.</p>
+      <div class="flex justify-between text-xs text-gray-500 pt-3 border-t border-white/10"><span>NH PWD Uttarakhand</span><span>2022</span></div>
+    </div>
+    <div class="reveal reveal-delay-3 card-hover bg-ink-light border border-white/10 rounded-2xl p-7">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-[10px] tracking-widest text-amber font-semibold">NH-87 EXT (NEW NH-109)</span>
+        <span class="status-pill status-completed">COMPLETED</span>
+      </div>
+      <p class="text-sm text-gray-300 leading-relaxed mb-4">Strengthening work from Km 89.00 to 101.00 and Km 108.500 to 120.000, including road safety work, on NH-87 Ext (New NH-109).</p>
+      <div class="flex justify-between text-xs text-gray-500 pt-3 border-t border-white/10"><span>NH PWD Uttarakhand</span><span>2021</span></div>
+    </div>
+    <div class="reveal card-hover bg-ink-light border border-white/10 rounded-2xl p-7">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-[10px] tracking-widest text-amber font-semibold">RAMGARH · NAINITAL</span>
+        <span class="status-pill status-completed">COMPLETED</span>
+      </div>
+      <p class="text-sm text-gray-300 leading-relaxed mb-4">Annual maintenance 2024-25 — renovation by SDBC in Km 1, 3, 6, 7, 13, 14, 15, 16 (single lane) and 21 to 29 (one-and-a-half lane) of the Laxmi Khan Talla Ramgarh Nathuwa Khan PUDA Quarab motor road.</p>
+      <div class="flex justify-between text-xs text-gray-500 pt-3 border-t border-white/10"><span>PWD Uttarakhand</span><span>2025</span></div>
+    </div>
+    <div class="reveal reveal-delay-1 card-hover bg-ink-light border border-white/10 rounded-2xl p-7">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-[10px] tracking-widest text-amber font-semibold">JAGESHWAR · ALMORA</span>
+        <span class="status-pill status-completed">COMPLETED</span>
+      </div>
+      <p class="text-sm text-gray-300 leading-relaxed mb-4">Renovation work by SDBC from Km 70 to 71, 73 to 77 and 81 to 82 of the Kathgodam (Ranibag)–Bhimtal–Khutani–Padampuri–Dhanachuli–Pahadrani–Shaharfatak–Mauranaula–Devidhura–Lohaghat–Pancheshwar motorway, under the annual maintenance head, 2023-24.</p>
+      <div class="flex justify-between text-xs text-gray-500 pt-3 border-t border-white/10"><span>PWD Uttarakhand</span><span>2024</span></div>
+    </div>
+    <div class="reveal reveal-delay-2 card-hover bg-ink-light border border-white/10 rounded-2xl p-7 md:col-span-2">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-[10px] tracking-widest text-amber font-semibold">NH-87 EXT (NEW NH-109) · BRIDGES</span>
+        <span class="status-pill status-ongoing">ONGOING</span>
+      </div>
+      <p class="text-sm text-gray-300 leading-relaxed mb-4">Construction of 2-lane, Class-A loading steel girder RCC deck composite bridge of 15m span at Km 11 (0-2) &amp; RCC bridge of 13.5m span at Km 11 (8-10); 36m span steel girder RCC deck composite bridge at Km 31 (2-4); and 9.32m span RCC bridge at Km 33 (4-6) on NH-87 Ext (New NH-109).</p>
+      <div class="flex justify-between text-xs text-gray-500 pt-3 border-t border-white/10"><span>NH PWD Uttarakhand</span><span>2025–2026</span></div>
+    </div>
+  </div>
+  <div class="text-center mt-14 reveal">
+    <a href="#contact" class="btn-primary font-semibold px-8 py-3.5 rounded-full inline-block">Discuss Your Project →</a>
+  </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications" class="bg-ink-light py-28 md:py-36 px-6 md:px-10 border-y border-white/5">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <p class="text-amber font-semibold tracking-[.25em] text-sm mb-3">COMPLIANCE READY</p>
+      <h2 class="font-heading font-extrabold text-3xl md:text-4xl mb-4">Certifications &amp; Registrations</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal bg-ink border border-white/10 rounded-2xl p-7">
+        <div class="text-xs text-gray-500 mb-2 tracking-widest">GST NUMBER — UTTARAKHAND</div>
+        <div class="font-heading font-bold text-lg">05ABVPL5645G1ZA</div>
+      </div>
+      <div class="reveal reveal-delay-1 bg-ink border border-white/10 rounded-2xl p-7">
+        <div class="text-xs text-gray-500 mb-2 tracking-widest">GST NUMBER — RAJASTHAN</div>
+        <div class="font-heading font-bold text-lg">08ABVPL5643G1Z4</div>
+      </div>
+      <div class="reveal reveal-delay-2 bg-ink border border-white/10 rounded-2xl p-7">
+        <div class="text-xs text-gray-500 mb-2 tracking-widest">CONTRACTOR / PWD REGISTRATION</div>
+        <div class="font-heading font-bold text-lg">Class A</div>
+      </div>
+      <div class="reveal bg-ink border border-white/10 rounded-2xl p-7">
+        <div class="text-xs text-gray-500 mb-2 tracking-widest">PAN NUMBER</div>
+        <div class="font-heading font-bold text-lg">ABVPL5645G</div>
+      </div>
+      <div class="reveal reveal-delay-1 bg-ink border border-white/10 rounded-2xl p-7">
+        <div class="text-xs text-gray-500 mb-2 tracking-widest">MSME / UDYAM REGISTRATION</div>
+        <div class="font-heading font-bold text-lg">UDYAM-UK-12-0013998</div>
+      </div>
+      <div class="reveal reveal-delay-2 bg-ink border border-white/10 rounded-2xl p-7">
+        <div class="text-xs text-gray-500 mb-2 tracking-widest">OTHER CERTIFICATIONS</div>
+        <div class="font-heading font-bold text-lg">ESIC, PF</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section id="team" class="max-w-7xl mx-auto px-6 md:px-10 py-28 md:py-36">
+  <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+    <p class="text-amber font-semibold tracking-[.25em] text-sm mb-3">WHO RUNS THE WORK</p>
+    <h2 class="font-heading font-extrabold text-3xl md:text-4xl mb-4">Our Team</h2>
+    <p class="text-gray-400">15+ skilled employees, 20+ semi-skilled employees, and 50+ equipment operators.</p>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="reveal card-hover bg-ink-light border border-white/10 rounded-2xl p-6 text-center">
+      <div class="w-14 h-14 mx-auto rounded-full bg-amber/15 text-amber font-heading font-extrabold flex items-center justify-center mb-4">GS</div>
+      <h3 class="font-heading font-bold text-sm">Guga Lal Singhla</h3>
+      <p class="text-xs text-amber mt-1">Director</p>
+    </div>
+    <div class="reveal reveal-delay-1 card-hover bg-ink-light border border-white/10 rounded-2xl p-6 text-center">
+      <div class="w-14 h-14 mx-auto rounded-full bg-amber/15 text-amber font-heading font-extrabold flex items-center justify-center mb-4">MS</div>
+      <h3 class="font-heading font-bold text-sm">Manoj Singhal</h3>
+      <p class="text-xs text-gray-400 mt-1">Key Personnel</p>
+    </div>
+    <div class="reveal reveal-delay-2 card-hover bg-ink-light border border-white/10 rounded-2xl p-6 text-center">
+      <div class="w-14 h-14 mx-auto rounded-full bg-amber/15 text-amber font-heading font-extrabold flex items-center justify-center mb-4">YG</div>
+      <h3 class="font-heading font-bold text-sm">Yogesh Garg</h3>
+      <p class="text-xs text-gray-400 mt-1">Project Director</p>
+    </div>
+    <div class="reveal reveal-delay-3 card-hover bg-ink-light border border-white/10 rounded-2xl p-6 text-center">
+      <div class="w-14 h-14 mx-auto rounded-full bg-amber/15 text-amber font-heading font-extrabold flex items-center justify-center mb-4">HS</div>
+      <h3 class="font-heading font-bold text-sm">Himanshu Saini</h3>
+      <p class="text-xs text-gray-400 mt-1">Project Director</p>
+    </div>
+    <div class="reveal card-hover bg-ink-light border border-white/10 rounded-2xl p-6 text-center">
+      <div class="w-14 h-14 mx-auto rounded-full bg-amber/15 text-amber font-heading font-extrabold flex items-center justify-center mb-4">PJ</div>
+      <h3 class="font-heading font-bold text-sm">Pradeep Jalbera</h3>
+      <p class="text-xs text-gray-400 mt-1">Project Engineer</p>
+    </div>
+    <div class="reveal reveal-delay-1 card-hover bg-ink-light border border-white/10 rounded-2xl p-6 text-center">
+      <div class="w-14 h-14 mx-auto rounded-full bg-amber/15 text-amber font-heading font-extrabold flex items-center justify-center mb-4">MA</div>
+      <h3 class="font-heading font-bold text-sm">Muzzakar Ali</h3>
+      <p class="text-xs text-gray-400 mt-1">Project Engineer</p>
+    </div>
+    <div class="reveal reveal-delay-2 card-hover bg-ink-light border border-white/10 rounded-2xl p-6 text-center">
+      <div class="w-14 h-14 mx-auto rounded-full bg-amber/15 text-amber font-heading font-extrabold flex items-center justify-center mb-4">GH</div>
+      <h3 class="font-heading font-bold text-sm">Gopal Hari</h3>
+      <p class="text-xs text-gray-400 mt-1">Lab Technician</p>
+    </div>
+    <div class="reveal reveal-delay-3 card-hover bg-ink-light border border-white/10 rounded-2xl p-6 text-center">
+      <div class="w-14 h-14 mx-auto rounded-full bg-amber/15 text-amber font-heading font-extrabold flex items-center justify-center mb-4">A</div>
+      <h3 class="font-heading font-bold text-sm">Abhishek</h3>
+      <p class="text-xs text-gray-400 mt-1">Jr. Engineer</p>
+    </div>
+    <div class="reveal card-hover bg-ink-light border border-white/10 rounded-2xl p-6 text-center">
+      <div class="w-14 h-14 mx-auto rounded-full bg-amber/15 text-amber font-heading font-extrabold flex items-center justify-center mb-4">PC</div>
+      <h3 class="font-heading font-bold text-sm">Prashant Chaudhary</h3>
+      <p class="text-xs text-gray-400 mt-1">Site Supervisor</p>
+    </div>
+    <div class="reveal reveal-delay-1 card-hover bg-ink-light border border-white/10 rounded-2xl p-6 text-center">
+      <div class="w-14 h-14 mx-auto rounded-full bg-amber/15 text-amber font-heading font-extrabold flex items-center justify-center mb-4">SS</div>
+      <h3 class="font-heading font-bold text-sm">Sundar Singh</h3>
+      <p class="text-xs text-gray-400 mt-1">Site Supervisor</p>
+    </div>
+    <div class="reveal reveal-delay-2 card-hover bg-ink-light border border-white/10 rounded-2xl p-6 text-center">
+      <div class="w-14 h-14 mx-auto rounded-full bg-amber/15 text-amber font-heading font-extrabold flex items-center justify-center mb-4">DS</div>
+      <h3 class="font-heading font-bold text-sm">Dasrath Singh</h3>
+      <p class="text-xs text-gray-400 mt-1">Site Supervisor</p>
+    </div>
+    <div class="reveal reveal-delay-3 card-hover bg-amber/10 border border-amber/30 rounded-2xl p-6 text-center flex flex-col items-center justify-center">
+      <div class="font-heading font-extrabold text-2xl text-amber">50+</div>
+      <p class="text-xs text-gray-300 mt-1">Machine Operators &amp; Skilled Labour</p>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="bg-ink-light py-28 md:py-36 px-6 md:px-10 border-y border-white/5">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-14 items-start mb-16">
+      <div class="reveal">
+        <p class="text-amber font-semibold tracking-[.25em] text-sm mb-3">WHY BALAJI EARTHMOVER</p>
+        <h2 class="font-heading font-extrabold text-3xl md:text-4xl leading-tight mb-6">Built on experience. Driven by quality.</h2>
+        <p class="text-gray-400 leading-relaxed">We combine experienced professionals, our own machinery fleet, and a strong commitment to safety and compliance to deliver dependable government infrastructure work.</p>
+      </div>
+      <div class="reveal reveal-delay-1 flex md:justify-end items-start">
+        <a href="#contact" class="btn-primary font-semibold px-7 py-3.5 rounded-full">Work With Us →</a>
+      </div>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal flex gap-4 p-6 rounded-2xl border border-white/10 bg-ink">
+        <span class="font-heading font-extrabold text-amber text-xl">01</span>
+        <div><h3 class="font-heading font-bold mb-1">Tender &amp; Compliance Experience</h3><p class="text-sm text-gray-400">Experienced in government tender processes and compliance.</p></div>
+      </div>
+      <div class="reveal reveal-delay-1 flex gap-4 p-6 rounded-2xl border border-white/10 bg-ink">
+        <span class="font-heading font-extrabold text-amber text-xl">02</span>
+        <div><h3 class="font-heading font-bold mb-1">Own Fleet</h3><p class="text-sm text-gray-400">Own fleet of earthmoving machinery — no dependency on rentals.</p></div>
+      </div>
+      <div class="reveal reveal-delay-2 flex gap-4 p-6 rounded-2xl border border-white/10 bg-ink">
+        <span class="font-heading font-extrabold text-amber text-xl">03</span>
+        <div><h3 class="font-heading font-bold mb-1">Pan-India Capability</h3><p class="text-sm text-gray-400">Operations across Uttarakhand with pan-India project capability.</p></div>
+      </div>
+      <div class="reveal flex gap-4 p-6 rounded-2xl border border-white/10 bg-ink">
+        <span class="font-heading font-extrabold text-amber text-xl">04</span>
+        <div><h3 class="font-heading font-bold mb-1">Always Available</h3><p class="text-sm text-gray-400">Available all days of the week for project execution.</p></div>
+      </div>
+      <div class="reveal reveal-delay-1 flex gap-4 p-6 rounded-2xl border border-white/10 bg-ink">
+        <span class="font-heading font-extrabold text-amber text-xl">05</span>
+        <div><h3 class="font-heading font-bold mb-1">Long-Term Relationships</h3><p class="text-sm text-gray-400">We build relationships that last beyond a single project.</p></div>
+      </div>
+      <div class="reveal reveal-delay-2 flex gap-4 p-6 rounded-2xl border border-white/10 bg-ink">
+        <span class="font-heading font-extrabold text-amber text-xl">06</span>
+        <div><h3 class="font-heading font-bold mb-1">Clear &amp; Honest Communication</h3><p class="text-sm text-gray-400">Straightforward communication throughout every project.</p></div>
+      </div>
+      <div class="reveal sm:col-span-2 lg:col-span-1 flex gap-4 p-6 rounded-2xl border border-white/10 bg-ink">
+        <span class="font-heading font-extrabold text-amber text-xl">07</span>
+        <div><h3 class="font-heading font-bold mb-1">Proven Renewal Track Record</h3><p class="text-sm text-gray-400">Great experience in renewal work without any time extension.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="max-w-7xl mx-auto px-6 md:px-10 py-28 md:py-36 grid lg:grid-cols-5 gap-14">
+  <div class="lg:col-span-2 reveal">
+    <p class="text-amber font-semibold tracking-[.25em] text-sm mb-3">GET IN TOUCH</p>
+    <h2 class="font-heading font-extrabold text-3xl md:text-4xl mb-4">Have a project in mind?</h2>
+    <p class="text-gray-400 mb-8">Tell us about your project and our team will get back to you with the right solution.</p>
+    <div class="space-y-4 mb-8">
+      <div class="flex items-center gap-4 p-4 rounded-xl border border-white/10"><span class="text-2xl">☎</span><div><div class="text-xs text-gray-500">CALL US</div><div class="font-semibold">7037035948</div></div></div>
+      <div class="flex items-center gap-4 p-4 rounded-xl border border-white/10"><span class="text-2xl">✉</span><div><div class="text-xs text-gray-500">EMAIL US</div><div class="font-semibold">balajiearthmovers.rdr2@gmail.com</div></div></div>
+      <div class="flex items-center gap-4 p-4 rounded-xl border border-white/10"><span class="text-2xl">⌖</span><div><div class="text-xs text-gray-500">ADDRESS</div><div class="font-semibold">Plot No. B6, Old Industrial Area, Kichha Bypass Road, Opp. Mahindra Car Showroom, Rudrapur, Uttarakhand</div></div></div>
+      <div class="flex items-center gap-4 p-4 rounded-xl border border-white/10"><span class="text-2xl">🗓</span><div><div class="text-xs text-gray-500">WORKING DAYS</div><div class="font-semibold">Monday to Sunday (all days)</div></div></div>
+    </div>
+    <a href="https://wa.me/917037035948" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 transition text-white font-semibold px-6 py-3 rounded-full">Chat on WhatsApp →</a>
+    <div class="mt-8 rounded-2xl overflow-hidden border border-white/10 aspect-video">
+      <iframe src="https://www.google.com/maps?q=Rudrapur%2C%20Uttarakhand&output=embed" class="w-full h-full grayscale contrast-125" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <form id="enquiryForm" class="lg:col-span-3 reveal reveal-delay-1 bg-ink-light border border-white/10 rounded-2xl p-8 md:p-10">
+    <p class="text-amber font-semibold tracking-[.25em] text-xs mb-2">SEND US A MESSAGE</p>
+    <h3 class="font-heading font-bold text-2xl mb-6">Request an Enquiry</h3>
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div><label class="text-xs text-gray-400 mb-1 block">Full Name *</label><input required type="text" class="w-full bg-ink border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-amber"></div>
+      <div><label class="text-xs text-gray-400 mb-1 block">Phone Number *</label><input required type="tel" class="w-full bg-ink border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-amber"></div>
+      <div><label class="text-xs text-gray-400 mb-1 block">Email Address *</label><input required type="email" class="w-full bg-ink border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-amber"></div>
+      <div><label class="text-xs text-gray-400 mb-1 block">Company / Department</label><input type="text" class="w-full bg-ink border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-amber"></div>
+      <div class="sm:col-span-2"><label class="text-xs text-gray-400 mb-1 block">Project Type *</label>
+        <select required class="w-full bg-ink border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-amber">
+          <option value="">Select project type</option>
+          <option>Earthmoving &amp; Excavation</option>
+          <option>Land Levelling &amp; Grading</option>
+          <option>Road Construction &amp; Repair</option>
+          <option>Site Development &amp; Clearance</option>
+          <option>Trenching &amp; Drainage Work</option>
+          <option>Government Tender Project</option>
+          <option>Hotmix &amp; Bridges in Hilly Terrain</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="sm:col-span-2"><label class="text-xs text-gray-400 mb-1 block">Subject *</label><input required type="text" class="w-full bg-ink border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-amber"></div>
+      <div class="sm:col-span-2"><label class="text-xs text-gray-400 mb-1 block">Message *</label><textarea required rows="4" class="w-full bg-ink border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-amber"></textarea></div>
+    </div>
+    <button type="submit" class="btn-primary font-semibold px-8 py-3.5 rounded-full mt-6">Send Enquiry →</button>
+    <p class="text-xs text-gray-500 mt-3">UI only — no message is actually sent yet. Hook this form up to your backend or a form service when ready.</p>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-white/10 px-6 md:px-10 pt-20 pb-8">
+  <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
+    <div>
+      <a href="#home" class="flex items-center gap-3">
+        <img src="assets/logo.jpg" alt="Balaji Earthmover logo" class="h-10 w-10 rounded-full object-cover ring-2 ring-amber/60">
+        <span class="font-heading font-extrabold text-lg">BALAJI EARTHMOVER</span>
+      </a>
+      <p class="text-sm text-gray-400 mt-4 leading-relaxed">Earthmoving and construction company specializing in government infrastructure and tender-based projects since 2008.</p>
+    </div>
+    <div>
+      <h4 class="font-heading font-bold mb-4 text-sm tracking-wide">QUICK LINKS</h4>
+      <ul class="space-y-2 text-sm text-gray-400">
+        <li><a href="#home" class="hover:text-amber transition">Home</a></li>
+        <li><a href="#about" class="hover:text-amber transition">About Us</a></li>
+        <li><a href="#vision" class="hover:text-amber transition">Vision &amp; Values</a></li>
+        <li><a href="#services" class="hover:text-amber transition">Services</a></li>
+        <li><a href="#equipment" class="hover:text-amber transition">Equipment</a></li>
+        <li><a href="#projects" class="hover:text-amber transition">Projects</a></li>
+        <li><a href="#certifications" class="hover:text-amber transition">Certifications</a></li>
+        <li><a href="#team" class="hover:text-amber transition">Team</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-heading font-bold mb-4 text-sm tracking-wide">OUR SERVICES</h4>
+      <ul class="space-y-2 text-sm text-gray-400">
+        <li>Earthmoving &amp; Excavation</li>
+        <li>Land Levelling &amp; Grading</li>
+        <li>Road Construction &amp; Repair</li>
+        <li>Site Development &amp; Clearance</li>
+        <li>Trenching &amp; Drainage Work</li>
+        <li>Government Tender Projects</li>
+        <li>Hotmix &amp; Bridges in Hilly Terrain</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-heading font-bold mb-4 text-sm tracking-wide">CONTACT US</h4>
+      <ul class="space-y-3 text-sm text-gray-400">
+        <li><span class="text-gray-500 block text-xs">Phone</span>7037035948</li>
+        <li><span class="text-gray-500 block text-xs">Email</span>balajiearthmovers.rdr2@gmail.com</li>
+        <li><span class="text-gray-500 block text-xs">Address</span>Plot No. B6, Old Industrial Area, Kichha Bypass Road, Rudrapur, Uttarakhand</li>
+        <li><span class="text-gray-500 block text-xs">Operating Area</span>Uttarakhand / Rajasthan &amp; all over India</li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500">
+    <p>© 2026 Balaji Earthmover. All Rights Reserved.</p>
+    <p>Proprietor: Mr. Guga Lal Singhla</p>
+  </div>
+</footer>
+
+<!-- Floating buttons -->
+<a href="https://wa.me/917037035948" class="fixed bottom-6 left-6 z-40 w-14 h-14 bg-green-600 hover:bg-green-500 transition rounded-full flex items-center justify-center shadow-xl text-2xl" aria-label="WhatsApp">💬</a>
+<button id="backToTop" class="fixed bottom-6 right-6 z-40 w-12 h-12 bg-amber text-ink rounded-full flex items-center justify-center shadow-xl opacity-0 pointer-events-none" aria-label="Back to top">↑</button>
+
+<!-- Toast -->
+<div id="toast" class="fixed top-6 right-6 z-[100] bg-amber text-ink font-semibold px-6 py-4 rounded-xl shadow-2xl opacity-0 pointer-events-none translate-y-[-10px]">
+  Thanks! Your enquiry UI submitted (no backend connected yet).
+</div>
+
+<script>
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+  // Navbar scroll state
+  const navbar = document.getElementById('navbar');
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    navbar.classList.toggle('scrolled', y > 40);
+    if (y > 600) { backToTop.classList.remove('opacity-0','pointer-events-none'); }
+    else { backToTop.classList.add('opacity-0','pointer-events-none'); }
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Count-up stats
+  const counters = document.querySelectorAll('[data-count]');
+  const countIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseInt(el.dataset.count, 10);
+      const duration = 1400;
+      const start = performance.now();
+      function tick(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(eased * target) + (target === 100 ? '%' : '+');
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      countIO.unobserve(el);
+    });
+  }, { threshold: 0.4 });
+  counters.forEach(el => countIO.observe(el));
+
+  // Contact form (UI only)
+  const form = document.getElementById('enquiryForm');
+  const toast = document.getElementById('toast');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    toast.classList.remove('opacity-0','pointer-events-none','translate-y-[-10px]');
+    form.reset();
+    setTimeout(() => toast.classList.add('opacity-0','pointer-events-none','translate-y-[-10px]'), 3500);
+  });
+</script>
+
+</body>
+</html>
